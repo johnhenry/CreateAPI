@@ -5,10 +5,10 @@ Note : This is a very "Meta" library -- the ideal usage is to create libraries f
 ### Installation
 #### Node
 ```
-    $ npm install CreateAPI
+    $ npm install create-api
 ```
 ```js
-    var CreateAPI = require('CreateAPI');
+    var CreateAPI = require('create-api');
 ```
 
 #### Browser
