@@ -22,8 +22,10 @@ CreateAPI.Get takes two arguments -- api and efforFunc
 
     * api.url (required) - HTTP GET url of the web accessable api
     * api.dataDefault (optional) - Object containig default parameters to be passed to the api
-    * api.dataRequired (optional) - Object containig required parameters. these will overwite any other parameters passed
-    * api.transformResponse (optional) - function or array of functions used to transform final response -- should be used in conjunction with api.dataRequired in order to produce desired results
+    * api.dataRequired (optional) - Object containig required parameters.
+    	These will overwrite any other parameters passed
+    * api.transformResponse (optional) - function or array of functions used to transform final response
+        Should be used in conjunction with api.dataRequired in order to produce desired results
 
 #### errorFunc (optional) - function to be called in case of request error
 
@@ -33,7 +35,7 @@ CreateAPI.Get takes two arguments -- api and efforFunc
 
 CreateAPI.Get returns a function that takes up to three arguments -- parameters, callback, failure
     
-    parameters (optional) - Object containing parameters to be passed to api e.g.  {a:1,b:2} <===> ...?a=1&b=2
+    * parameters (optional) - Object containing parameters to be passed to api e.g.  {a:1,b:2} <===> ...?a=1&b=2
     * callback (optional) - function to be called upon response
         callback is passed three parameters:
             * result - the transformed response
@@ -73,7 +75,8 @@ CreateAPI.Get returns a function that takes up to three arguments -- parameters,
         transformResponse:[plain_to_array,map_string_to_int_10]
     })
     var i;
-    RandInt({min:5,max:42},function(result){i = result;console.log(i);}) //asyncronously sets i to a random integer and logs it
+    RandInt({min:5,max:42},function(result){i = result;console.log(i);})
+	//Asyncronously sets i to a random integer and logs it
 ```
 
 ### Usage - CreateAPI.Create(api_list,obj,errorFuncByName)
