@@ -79,13 +79,16 @@ CreateAPI.Get returns a function that takes up to three arguments -- parameters,
 	//Asyncronously sets i to a random integer and logs it
 ```
 
-### Usage - CreateAPI.Create(api_list,obj,errorFuncByName)
+### Usage - CreateAPI.Create(apiObj,obj,errorFuncByName)
 CreateAPI.Create provides a simple way to create an object that conviniently holds a set of APIs
-It takes three arguments -- api_list, obj, and errorFuncByName
+It takes three arguments -- apiObj, obj, and errorFuncByName
 
-    * api_list (required) - Object containing apis (as defined above for CreateAPI.Get). Keys are be used as function names in resulting api object.
-    * obj (optional) - Object into which api functions will be added as methods. If this object is not given, CreateAPI.Create will return a new object.
-    * errorFuncByName (optional) - Function that takes the name of the functions from api_list and returns an error function to be used with said function
+    * apiObj (required) - Object containing apis (as defined above for CreateAPI.Get).
+        Keys are be used as function names in resulting api object.
+    * obj (optional) - Object into which api functions will be added as methods.
+        If this object is not given, CreateAPI.Create will return a new object.
+    * errorFuncByName (optional) - Function takes name of an API and returns
+        a corresponding function.
 
 #### Example
 
