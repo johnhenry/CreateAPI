@@ -1,0 +1,15 @@
+{
+
+  "name" : "CreateAPI",
+  "private" : "false",
+  "version" : "0.0.1",
+  "description" : "Create APIs the connect asynchronously to the web",
+  "keywords" : ["create","api","web","asynchronous"],
+  "author" : "John Henry <john@iamjohnhenry.com>",
+  "homepage" : "https://github.com/johnhenry/CreateAPI",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/johnhenry/CreateAPI.git"
+  },
+  "main": "CreateAPI"
+}
