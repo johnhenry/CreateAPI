@@ -1,5 +1,5 @@
 #Create API
-##Library for Creating APIs that connect asynchronously to APIs on the web. 
+##Create APIs the connect asynchronously to the web. 
 Can be used in both client-side and server-side applications.
 Note : This is a very "Meta" library -- the ideal usage is to create libraries for use in other libraries...
 ### Installation
