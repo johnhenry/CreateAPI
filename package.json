@@ -1,7 +1,6 @@
 {
 
   "name" : "CreateAPI",
-  "private" : "false",
   "version" : "0.0.1",
   "description" : "Create APIs the connect asynchronously to the web",
   "keywords" : ["create","api","web","asynchronous"],
